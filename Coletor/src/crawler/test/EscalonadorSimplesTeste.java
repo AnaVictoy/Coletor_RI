@@ -70,7 +70,6 @@ public class EscalonadorSimplesTeste {
 					ordemEsperada[i],ordemFeita[i]);
 		}
 		
-		
 		//resgata o 4o (UOL)
 		System.out.println("Resgatando uma URL de um dominio que acaba de ser acessado... ");
 		URLAddress u4 = e.getURL();

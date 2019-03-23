@@ -56,7 +56,7 @@ public class URLAddress {
                 EscalonadorSimplesTeste e= new EscalonadorSimplesTeste();
                 e.testServidor();
                 e.testAdicionaRemovePagina();
-		/*URLAddress url1 = new URLAddress("http://www.terra.com.br/oioi/lala", 0);
+		URLAddress url1 = new URLAddress("http://www.terra.com.br/oioi/lala", 0);
 		System.out.println("Dominio: "+url1.getDomain());
 		System.out.println("Caminho: "+url1.getPath());
 		System.out.println("Completo: "+url1.getAddress());
@@ -74,7 +74,7 @@ public class URLAddress {
 		url = new URL("http://esportes.terra.com.br");
 		System.out.println(url.getHost());
 		address = InetAddress.getByName(url.getHost());
-		System.out.println(address.getHostAddress());*/
+		System.out.println(address.getHostAddress());
                 
 	}
 	public String toString()
