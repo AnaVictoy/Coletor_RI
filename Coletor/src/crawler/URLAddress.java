@@ -50,33 +50,6 @@ public class URLAddress {
 	}
 	
 	
-	
-	public static void main(String[] args) throws MalformedURLException, UnknownHostException
-	{
-                EscalonadorSimplesTeste e= new EscalonadorSimplesTeste();
-                e.testServidor();
-                e.testAdicionaRemovePagina();
-		URLAddress url1 = new URLAddress("http://www.terra.com.br/oioi/lala", 0);
-		System.out.println("Dominio: "+url1.getDomain());
-		System.out.println("Caminho: "+url1.getPath());
-		System.out.println("Completo: "+url1.getAddress());
-		
-		URLAddress url2 = new URLAddress("esportes.terra.com.br/kaak/oioi", 0);
-		System.out.println("Dominio: "+url2.getDomain());
-		System.out.println("Caminho: "+url2.getPath());
-		System.out.println("Completo: "+url2.getAddress());
-		
-		URL url = new URL("http://www.terra.com.br");
-		System.out.println(url.getHost());
-		InetAddress address = InetAddress.getByName(url.getHost());
-		System.out.println(address.getHostAddress());
-		
-		url = new URL("http://esportes.terra.com.br");
-		System.out.println(url.getHost());
-		address = InetAddress.getByName(url.getHost());
-		System.out.println(address.getHostAddress());
-                
-	}
 	public String toString()
 	{
 		return address.toString();

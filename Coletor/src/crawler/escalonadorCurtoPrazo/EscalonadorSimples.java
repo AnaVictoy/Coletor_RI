@@ -88,7 +88,6 @@ public class EscalonadorSimples implements Escalonador {
         if (robotsServidor.containsKey(servidor)) {
             return robotsServidor.get(servidor);
         }
-
         return null;
     }
 
