@@ -63,6 +63,7 @@ public class EscalonadorSimples implements Escalonador {
     public  boolean adicionaNovaPagina(URLAddress urlAdd) {
         LinkedList<URLAddress> aux = new LinkedList<URLAddress>();
         Servidor servidor = new Servidor(urlAdd.getDomain());
+        
         if(descobertos.contains(urlAdd.toString())){
             return false;
         }
@@ -76,6 +77,7 @@ public class EscalonadorSimples implements Escalonador {
             return true;
         }else{
             descobertos.add(urlAdd.toString());
+            //descobertos.add(servidor.getNome());
             aux.add(urlAdd);
             hashServer.put(servidor, aux);
             return true;
@@ -109,6 +111,16 @@ public class EscalonadorSimples implements Escalonador {
     public void countFetchedPage() {
         paginas++;
 
+    }
+    
+    public void exibe() {
+        System.out.println("URL'S");
+        for (Servidor key : hashServer.keySet()) {
+            LinkedList<URLAddress> value = hashServer.get(key);
+            System.out.println("Servidor: "+key.getNome()+" URL: "+value.toString());
+        }
+        System.out.println("DESCOBERTOS");
+        System.out.println(descobertos.toString());
     }
 
 }
